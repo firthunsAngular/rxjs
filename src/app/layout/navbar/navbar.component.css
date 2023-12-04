@@ -1,0 +1,20 @@
+.custom-navbar {
+  background-color: transparent !important; /* Hace que el fondo sea transparente */
+}
+
+.custom-btn {
+  background-color: transparent; /* Hace que el fondo del botón sea transparente */
+  width: 4rem;
+  border: none; /* Elimina el borde del botón si lo tiene */
+  padding: 2.5px; /* Ajusta el relleno del botón según sea necesario */
+}
+.custom-btn:hover {
+  background-color: gainsboro; /* Hace que el fondo del botón sea transparente */
+  border: none; /* Elimina el borde del botón si lo tiene */
+  padding: 2.5px; /* Ajusta el relleno del botón aquí sea necesario */
+}
+
+.custom-icon {
+  color: black; /* Cambia el color del ícono a negro */
+  font-size: 1.5rem; /* Ajusta el tamaño del ícono según sea necesario */
+}
