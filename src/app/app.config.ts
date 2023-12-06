@@ -3,10 +3,8 @@ import {provideRouter, withComponentInputBinding} from '@angular/router';
 
 import { routes } from './app.routes';
 import {HttpClient, provideHttpClient} from "@angular/common/http";
-import {BrowserModule} from "@angular/platform-browser";
-import {BrowserAnimationsModule, provideAnimations} from "@angular/platform-browser/animations";
+import { provideAnimations} from "@angular/platform-browser/animations";
 import {AppSettingsService} from "./core/services/app-settings.service";
-import {catchError, from, Observable, switchMap, throwError} from "rxjs";
 import {TranslateLoader, TranslateModule, TranslateService} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 

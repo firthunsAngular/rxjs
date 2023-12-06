@@ -66,6 +66,7 @@ export interface iSideBarMenu {
   id: number;
   title: string;
   translatetitle: string;
+  expanded:boolean;
   subMenu: iSubMenu[];
   icon?: string;
 }

@@ -177,6 +177,7 @@
       "id": 0,
       "title": "Redux",
       "translatetitle": "sidebar.menu.redux",
+      "expanded": true,
       "subMenu": [
         {
           "id": 0,
@@ -203,6 +204,7 @@
       "id": 1,
       "title": "CONSUMO API's",
       "translatetitle": "sidebar.menu.api",
+      "expanded": false,
       "subMenu": [
         {
           "id": 0,
@@ -216,6 +218,7 @@
       "id": 2,
       "title": "Funciones especiales",
       "translatetitle": "sidebar.menu.specials",
+      "expanded": false,
       "subMenu": [
         {
           "id": 1,
@@ -265,6 +268,7 @@
       "id": 3,
       "title": "Formularios Reactivos",
       "translatetitle": "sidebar.menu.reactiveForm",
+      "expanded": false,
       "subMenu": [
         {
           "id": 0,
@@ -278,6 +282,7 @@
       "id": 4,
       "title": "Industrial",
       "translatetitle": "sidebar.menu.factory",
+      "expanded": false,
       "subMenu": [
         {
           "id": 0,
@@ -310,6 +315,7 @@
       "icon": "fas fa-hammer",
       "title": "Configuración",
       "translatetitle": "sidebar.menu.settings",
+      "expanded": false,
       "subMenu": [
         {
           "id": 0,
