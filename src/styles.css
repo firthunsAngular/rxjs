@@ -1,43 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
 
-*, html, body {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-body{
-  text-align: center !important;
-  background-color: #18202F;
-}
 
+
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
 h1 {
-  font-weight: lighter;
+  font-size: 4.8rem;
 }
-
-bg-sidebar{
-  background-color: #18202F;
+h2 {
+  font-size: 4rem;
 }
-input, button {
-  width: 35%;
-  padding: 10px;
-  color: black;
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 10px;
+h3 {
+  font-size: 3.2rem;
 }
-
-button, video{
-  margin-right: 10px;
+h4 {
+  font-size: 2.8rem;
 }
-
 img {
-  border-radius: 5px;
-  width: 150px;
-  height: 150px;
+  max-width: 100%;
+}
+.contenedor {
+  /*max-width: 120rem;*/
+  width: min(98%, 120rem);
+  margin: 0 auto;
+  padding: 0 ;
 }
 
-ol {
-  text-align: left;
+.mouse-pointer{
+  cursor: pointer;
 }
 
 .progress-bar {

@@ -1,0 +1,355 @@
+{
+
+  "localConnection": {
+    "frontEndUrl": "",
+    "serverUrl": "api/",
+    "signalRHub": ""
+  },
+  "productionConnection": {
+    "frontEndUrl": "",
+    "serverUrl": "api/",
+    "signalRHub": ""
+  },
+  "clientSettings": { },
+  "firebaseConnection": { },
+  "deviceZones": [
+    {
+      "nameZone": "Parque-1",
+      "labelTranslate": "sidebar.menu.Devices-Park1",
+      "devices": ["PA02-R211"]
+    },
+    {
+      "nameZone": "Parque-2",
+      "labelTranslate": "sidebar.menu.Devices-Park2",
+      "devices": ["PA02-R211", "PA02-R212"]
+    }
+  ],
+  "sideBarMenu": [
+    {
+      "id": 0,
+      "title": "Redux",
+      "translatetitle": "sidebar.menu.redux",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+
+          "subTitle": "Angular NGRX",
+          "routerLink": "redux/redux-ngrx"
+        },
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Component Store",
+          "routerLink": "redux/component-store"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Angular NGRX",
+          "routerLink": "redux/redux-ngrx"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "CONSUMO API's",
+      "translatetitle": "sidebar.menu.api",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Countries",
+          "routerLink": "apis/countries"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Funciones especiales",
+      "translatetitle": "sidebar.menu.specials",
+      "subMenu": [
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Nuevos proyectos",
+          "routerLink": "v2/excel"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Lector OCR",
+          "routerLink": "v2/ocr"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "Cámara",
+          "routerLink": "v2/camara"
+        },
+        {
+          "id": 4,
+          "icon": " fas fa-edit",
+          "subTitle": "Código QR",
+          "routerLink": "v2/qr"
+        },
+        {
+          "id": 5,
+          "icon": " fas fa-edit",
+          "subTitle": "Excel to Json file",
+          "routerLink": "v2/excelToJson"
+        },
+        {
+          "id": 6,
+          "icon": " fas fa-edit",
+          "subTitle": "To JSON file",
+          "routerLink": "v2/json"
+        },
+        {
+          "id": 7,
+          "icon": " fas fa-edit",
+          "subTitle": "Directorios",
+          "routerLink": "v2/directorios"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Formularios Reactivos",
+      "translatetitle": "sidebar.menu.reactiveForm",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Formularios reactivos",
+          "routerLink": "v3/formularios"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Industrial",
+      "translatetitle": "sidebar.menu.factory",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Resumen dispositivo",
+          "routerLink": "v4/reactores"
+        },
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Resumen reactores",
+          "routerLink": "v4/dispositivos"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Zona reactor",
+          "routerLink": "v4/device-zone"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "Signalr",
+          "routerLink": "v4/signalr"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "fas fa-hammer",
+      "title": "Configuración",
+      "translatetitle": "sidebar.menu.settings",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": "fas fa-hammer",
+          "subTitle": "Panel configuración",
+          "routerLink": "v2"
+        }
+      ]
+    }
+  ],
+  "sideBarMenuRXJS": [
+    {
+      "id": 0,
+      "title": "Redux",
+      "translatetitle": "sidebar.menu.redux",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+
+          "subTitle": "Angular NGRX",
+          "routerLink": "redux/redux-ngrx"
+        },
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Component Store",
+          "routerLink": "redux/component-store"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Angular NGRX",
+          "routerLink": "redux/redux-ngrx"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "CONSUMO API's",
+      "translatetitle": "sidebar.menu.api",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Countries",
+          "routerLink": "apis/countries"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Funciones especiales",
+      "translatetitle": "sidebar.menu.specials",
+      "subMenu": [
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Nuevos proyectos",
+          "routerLink": "v2/excel"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Lector OCR",
+          "routerLink": "v2/ocr"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "Cámara",
+          "routerLink": "v2/camara"
+        },
+        {
+          "id": 4,
+          "icon": " fas fa-edit",
+          "subTitle": "Código QR",
+          "routerLink": "v2/qr"
+        },
+        {
+          "id": 5,
+          "icon": " fas fa-edit",
+          "subTitle": "Excel to Json file",
+          "routerLink": "v2/excelToJson"
+        },
+        {
+          "id": 6,
+          "icon": " fas fa-edit",
+          "subTitle": "To JSON file",
+          "routerLink": "v2/json"
+        },
+        {
+          "id": 7,
+          "icon": " fas fa-edit",
+          "subTitle": "Directorios",
+          "routerLink": "v2/directorios"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Formularios Reactivos",
+      "translatetitle": "sidebar.menu.reactiveForm",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Formularios reactivos",
+          "routerLink": "v3/formularios"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Industrial",
+      "translatetitle": "sidebar.menu.factory",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "Resumen dispositivo",
+          "routerLink": "v4/reactores"
+        },
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "Resumen reactores",
+          "routerLink": "v4/dispositivos"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "Zona reactor",
+          "routerLink": "v4/device-zone"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "Signalr",
+          "routerLink": "v4/signalr"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "fas fa-hammer",
+      "title": "Configuración",
+      "translatetitle": "sidebar.menu.settings",
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": "fas fa-hammer",
+          "subTitle": "Panel configuración",
+          "routerLink": "v2"
+        }
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "name": "España",
+      "flag": "assets/imagenes/flags/es.png",
+      "code": "es_ES"
+    },
+    {
+      "name": "Alemania",
+      "flag": "assets/imagenes/flags/de.png",
+      "code": "de_DE"
+    },
+    {
+      "name": "Portugal",
+      "flag": "assets/imagenes/flags/pt.png",
+      "code": "pt_PT"
+    },
+    {
+      "name": "Italia",
+      "flag": "assets/imagenes/flags/it.png",
+      "code": "it_IT"
+    },
+    {
+      "name": "UK",
+      "flag": "assets/imagenes/flags/en.png",
+      "code": "en_EN"
+    },
+    {
+      "name": "Francia",
+      "flag": "assets/imagenes/flags/fr.png",
+      "code": "fr_FR"
+    }
+  ]
+}
