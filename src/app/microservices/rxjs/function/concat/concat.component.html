@@ -1,0 +1,11 @@
+<app-card [title]="'concat'">
+  <div>
+    <h3>Datos:</h3>
+    <p *ngFor="let data of combinedData">{{ data }}</p>
+  </div>
+</app-card>
+
+
+<app-modal [title]="'concat'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

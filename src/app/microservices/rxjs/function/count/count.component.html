@@ -1,0 +1,16 @@
+
+<app-card [title]="'count'">
+
+  <div>
+    <h5>Números multiplicados por 2</h5>
+    <ul>
+      <li *ngFor="let num of numbers">{{ num }}</li>
+    </ul>
+  </div>
+
+</app-card>
+
+
+<app-modal  [title]="'count'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

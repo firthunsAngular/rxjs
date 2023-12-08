@@ -1,0 +1,15 @@
+
+<app-card [title]="'concatMap'">
+  <h5>Información de usuarios:</h5>
+
+  <ul>
+    <li *ngFor="let userInfo of userInformation$ | async">
+      {{ userInfo.name }} - {{ userInfo.email }}
+    </li>
+  </ul>
+</app-card>
+
+
+<app-modal  [title]="'concatMap'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
