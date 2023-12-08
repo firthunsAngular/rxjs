@@ -1,11 +1,13 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {animationFrames, Subscription} from "rxjs";
 import {CommonModule} from "@angular/common";
+import {DataServiceService} from "../services/data-service.service";
+import {ModalComponent} from "../../components/modal/modal.component";
 
 @Component({
   selector: 'app-animation-frames',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ModalComponent],
   templateUrl: './animation-frames.component.html',
   styleUrl: './animation-frames.component.css'
 })
@@ -29,9 +31,10 @@ export class AnimationFramesComponent  implements OnInit, OnDestroy{
   directionX = 1;
 
 
-  constructor() { }
+  constructor(protected dataservice: DataServiceService) { }
 
   ngOnInit(): void {
+    this.dataservice.getInfoByTag('animationFrames').subscribe();
     // Obtener el ancho del contenedor y del elemento animado
     const container = document.querySelector('.card-body');
     const element = document.querySelector('.animated-element');

@@ -1,0 +1,13 @@
+<div class="card w-100" >
+  <div class="card-body">
+    <h5 class="card-title">Audit</h5>
+
+
+
+    <input type="text" placeholder="Buscar" (input)="onSearch($event.target.value)">
+    <ul>
+      <li *ngFor="let result of searchResults">{{ result }}</li>
+    </ul>
+
+  </div>
+</div>

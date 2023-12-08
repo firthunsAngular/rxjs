@@ -1,6 +1,13 @@
 <div class="card w-100" >
   <div class="card-body">
     <h5 class="card-title">AnimationFrames</h5>
+    <button type="button" class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+
+    >
+      Explicación
+    </button>
 
     <!-- animation.component.html -->
     <div [ngStyle]="{'transform': 'translateX(' + elementPosition + 'px)'}" class="animated-element">Elemento Animado</div>
@@ -16,3 +23,8 @@
   </div>
 </div>
 
+<!-- Modal -->
+
+<app-modal>
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
