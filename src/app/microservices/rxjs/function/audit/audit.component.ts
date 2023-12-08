@@ -10,6 +10,7 @@ import {CommonModule} from "@angular/common";
 import {ModalComponent} from "../../components/modal/modal.component";
 import {RxjsStore} from "../../rxjs.store";
 import {DataServiceService} from "../services/data-service.service";
+import {CardComponent} from "../../components/card/card.component";
 
 
 @Component({
@@ -18,6 +19,7 @@ import {DataServiceService} from "../services/data-service.service";
   imports: [
     CommonModule,
     ModalComponent,
+    CardComponent,
 
   ],
   templateUrl: './audit.component.html',
@@ -94,9 +96,6 @@ export class AuditComponent implements OnInit, OnDestroy {
     this.unsubscribe$.next();
     this.unsubscribe$.complete(); // Desuscribirse para evitar fugas de memoria
   }
-
-
-
 
 
 }

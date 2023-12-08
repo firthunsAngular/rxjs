@@ -182,7 +182,6 @@
         {
           "id": 0,
           "icon": " fas fa-edit",
-
           "subTitle": "AnimationFrames",
           "routerLink": "rxjs/animationFrames"
         },
@@ -191,7 +190,159 @@
           "icon": " fas fa-edit",
           "subTitle": "Audit",
           "routerLink": "rxjs/audit"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "CombineLatest",
+          "routerLink": "rxjs/combineLatest"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "CombineLatestAll",
+          "routerLink": "rxjs/combineLatestAll"
+        },
+        {
+          "id": 4,
+          "icon": " fas fa-edit",
+          "subTitle": "CombineLatestWith",
+          "routerLink": "rxjs/combineLatestWith"
+        },
+        {
+          "id": 5,
+          "icon": " fas fa-edit",
+          "subTitle": "Concat",
+          "routerLink": "rxjs/concat"
+        },
+        {
+          "id": 6,
+          "icon": " fas fa-edit",
+          "subTitle": "ConcatAll",
+          "routerLink": "rxjs/concatAll"
+        },
+        {
+          "id": 7,
+          "icon": " fas fa-edit",
+          "subTitle": "ConcatMap",
+          "routerLink": "rxjs/concatMap"
+        },
+        {
+          "id": 8,
+          "icon": " fas fa-edit",
+          "subTitle": "concatWith",
+          "routerLink": "rxjs/concatWith"
+        },
+        {
+          "id": 9,
+          "icon": " fas fa-edit",
+          "subTitle": "Count",
+          "routerLink": "rxjs/count"
+        },
+        {
+          "id": 10,
+          "icon": " fas fa-edit",
+          "subTitle": "debounce",
+          "routerLink": "rxjs/debounce"
+        },
+        {
+          "id": 11,
+          "icon": " fas fa-edit",
+          "subTitle": "debounceTime",
+          "routerLink": "rxjs/debounceTime"
+        },
+        {
+          "id": 12,
+          "icon": " fas fa-edit",
+          "subTitle": "defaultEmpty",
+          "routerLink": "rxjs/defaultEmpty"
+        },
+        {
+          "id": 13,
+          "icon": " fas fa-edit",
+          "subTitle": "defer",
+          "routerLink": "rxjs/defer"
+        },
+        {
+          "id": 14,
+          "icon": " fas fa-edit",
+          "subTitle": "delay",
+          "routerLink": "rxjs/delay"
+        },
+        {
+          "id": 15,
+          "icon": " fas fa-edit",
+          "subTitle": "delayWhen",
+          "routerLink": "rxjs/delayWhen"
+        },
+        {
+          "id": 16,
+          "icon": " fas fa-edit",
+          "subTitle": "dematerialize",
+          "routerLink": "rxjs/dematerialize"
+        },
+        {
+          "id": 17,
+          "icon": " fas fa-edit",
+          "subTitle": "distinct",
+          "routerLink": "rxjs/distinct"
+        },
+        {
+          "id": 18,
+          "icon": " fas fa-edit",
+          "subTitle": "distinctUntilChanged",
+          "routerLink": "rxjs/distinctUntilChanged"
+        },
+        {
+          "id": 19,
+          "icon": " fas fa-edit",
+          "subTitle": "distinctUntilKeyChanged",
+          "routerLink": "rxjs/distinctUntilKeyChanged"
+        },
+        {
+          "id": 20,
+          "icon": " fas fa-edit",
+          "subTitle": "elementAt",
+          "routerLink": "rxjs/elementAt"
+        },
+        {
+          "id": 21,
+          "icon": " fas fa-edit",
+          "subTitle": "endWith",
+          "routerLink": "rxjs/endWith"
+        },
+        {
+          "id": 22,
+          "icon": " fas fa-edit",
+          "subTitle": "every",
+          "routerLink": "rxjs/every"
+        },
+        {
+          "id": 23,
+          "icon": " fas fa-edit",
+          "subTitle": "exhaustAll",
+          "routerLink": "rxjs/exhaustAll"
+        },
+        {
+          "id": 24,
+          "icon": " fas fa-edit",
+          "subTitle": "exhaustMap",
+          "routerLink": "rxjs/exhaustMap"
+        },
+        {
+          "id": 25,
+          "icon": " fas fa-edit",
+          "subTitle": "expand",
+          "routerLink": "rxjs/expand"
+        },
+        {
+          "id": 26,
+          "icon": " fas fa-edit",
+          "subTitle": "filter",
+          "routerLink": "rxjs/filter"
         }
+
+
       ]
     }
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable, Subject} from "rxjs";
+import {delay, Observable, of, Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -20,5 +20,13 @@ export class ModalService {
   // Método para obtener un Observable de eventos de apertura del modal
   onModalOpen(): Observable<string> {
     return this.modalOpenSubject.asObservable();
+  }
+
+  getDataOne(): Observable<string> {
+    return of('Datos de la fuente uno').pipe(delay(2000));
+  }
+
+  getDataTwo(): Observable<string> {
+    return of('Datos de la fuente dos').pipe(delay(2000));
   }
 }

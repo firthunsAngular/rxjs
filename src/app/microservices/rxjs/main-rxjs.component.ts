@@ -7,8 +7,12 @@ import {RouterOutlet} from "@angular/router";
   selector: 'app-main-rxjs',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './main-rxjs.component.html',
-  styleUrls: ['./main-rxjs.component.scss']
+  template:`
+      <router-outlet></router-outlet>
+
+  `
+
+
 })
 export class MainRxjsComponent  {
 

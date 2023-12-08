@@ -1,13 +1,9 @@
-<div class="card w-100" >
-  <div class="card-body">
-    <h5 class="card-title">Audit</h5>
+<app-card [title]="'debounceTime'">
+  <h5>debounceTime</h5>
+
+</app-card>
 
 
-
-    <input type="text" placeholder="Buscar" (input)="onSearch($event.target.value)">
-    <ul>
-      <li *ngFor="let result of searchResults">{{ result }}</li>
-    </ul>
-
-  </div>
-</div>
+<app-modal  [title]="'debounceTime'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

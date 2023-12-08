@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {catchError, interval, map, Observable, tap} from "rxjs";
+import {catchError, delay, forkJoin, interval, map, Observable, of, tap} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {ajax} from "rxjs/internal/ajax/ajax";
 import {AppSettings} from "../../../../core/models/app-settings";
@@ -34,5 +34,40 @@ export class DataServiceService {
       })
     );
   }
+
+  getDataOne(): Observable<string> {
+    return of('Datos de la fuente uno').pipe(delay(2000));
+  }
+
+  getDataTwo(): Observable<string> {
+    return of('Datos de la fuente dos').pipe(delay(2000));
+  }
+  // Simula la obtención de datos de usuarios desde un servidor
+  getUsers(): Observable<string[]> {
+    return of(['Usuario 1', 'Usuario 2', 'Usuario 3']).pipe(
+      // Simula un retraso en la obtención de datos para efectos visuales
+      delay(1000)
+    );
+  }
+
+  getInfo(userId: number): Observable<any> {
+    const userMap: any = {
+      1: { name: 'Usuario 1', email: 'usuario1@example.com' },
+      2: { name: 'Usuario 2', email: 'usuario2@example.com' },
+      3: { name: 'Usuario 3', email: 'usuario3@example.com' }
+    };
+
+    return of(userMap[userId]).pipe(delay(1000));
+  }
+
+  getUsersInformation(userIds: number[]): Observable<any[]> {
+    const requests = userIds.map(userId => this.getInfo(userId));
+    return forkJoin(requests);
+  }
+  getNumbers(): Observable<number[]> {
+    // Simulando una secuencia de números
+    return of([1, 2, 3, 4, 5]);
+  }
+
 
 }

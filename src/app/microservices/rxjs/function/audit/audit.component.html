@@ -1,43 +1,35 @@
 
-<div class="card w-100">
-  <div class="card-body">
-    <h5 class="card-title">Audit</h5>
-    <button type="button" class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
 
-    >
-      Explicación
-    </button>
+<app-card [title]="'audit'">
 
-    <h5>Ejemplo 1: </h5>
-    <button (click)="emitValues()">Emit Values</button>
+  <h5>Ejemplo 1: </h5>
+  <button (click)="emitValues()">Emit Values</button>
 
-    @if (showValue) {
-      <p>Last value emitted: {{ lastValue }}</p>
-      <p>{{ message }}</p>
-    }
-    <hr>
-    <h5>Ejemplo2: Valores emitidos:</h5>
-    <ul>
+  @if (showValue) {
+    <p>Last value emitted: {{ lastValue }}</p>
+    <p>{{ message }}</p>
+  }
+  <hr>
+  <h5>Ejemplo2: Valores emitidos:</h5>
+  <ul>
 
-      @for (eachItem of valores;track eachItem) {
+    @for (eachItem of valores;track eachItem) {
 
-        @if (valores.length < 4) {
-          <li>{{ eachItem }}</li>
-        }
-        @if (valores.length === 4) {
-          <span>Fin incremento</span>
-        }
+      @if (valores.length < 4) {
+        <li>{{ eachItem }}</li>
       }
-    </ul>
+      @if (valores.length === 4) {
+        <span>Fin incremento</span>
+      }
+    }
+  </ul>
 
-    <hr>
+  <hr>
 
-  </div>
-</div>
+</app-card>
+
 <!-- Modal -->
 
-  <app-modal>
+<app-modal  [title]="'audit'">
     <div [innerHTML]="dataservice.innerHTML"></div>
   </app-modal>
