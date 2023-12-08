@@ -172,19 +172,19 @@
       ]
     }
   ],
-  "sideBarMenuRXJS": [
+  "sideBarMenuRxjs": [
     {
       "id": 0,
-      "title": "Redux",
-      "translatetitle": "sidebar.menu.redux",
+      "title": "Functions",
+      "translatetitle": "sidebar.menu.functions",
       "expanded": true,
       "subMenu": [
         {
           "id": 0,
           "icon": " fas fa-edit",
 
-          "subTitle": "Angular NGRX",
-          "routerLink": "redux/redux-ngrx"
+          "subTitle": "AnimationFrames",
+          "routerLink": "rxjs/animationFrames"
         },
         {
           "id": 1,

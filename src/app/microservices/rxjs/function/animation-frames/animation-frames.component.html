@@ -1,0 +1,18 @@
+<div class="card w-100" >
+  <div class="card-body">
+    <h5 class="card-title">AnimationFrames</h5>
+
+    <!-- animation.component.html -->
+    <div [ngStyle]="{'transform': 'translateX(' + elementPosition + 'px)'}" class="animated-element">Elemento Animado</div>
+
+    <!-- color-animation.component.html -->
+    <div class="color-element" [style.background-color]="backgroundColor">Color Animado</div>
+
+    <div class="zigzag-container">
+      <div [style.left.px]="posX" [style.top.px]="posY" class="zigzag-ball"></div>
+    </div>
+
+
+  </div>
+</div>
+

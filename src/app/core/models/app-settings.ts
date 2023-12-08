@@ -1,17 +1,25 @@
 export class AppSettings {
+  get sideBarMenuRxjs(): iSidebarMenuRxjs[] {
+    return this._sideBarMenuRxjs;
+  }
+
+  set sideBarMenuRxjs(value: iSidebarMenuRxjs[]) {
+    this._sideBarMenuRxjs = value;
+  }
 
   private _productionConnection: iConnection;
   private _clientSettings: iConnection;
   private _sideBarMenu: iSideBarMenu[];
-
+  private _sideBarMenuRxjs: iSidebarMenuRxjs[];
   private _deviceZones: idevicesZones[];
   private _flags: any[];
 
 
-  constructor(productionConnection: iConnection, clientSettings: iConnection, sideBarMenu: iSideBarMenu[], deviceZones: idevicesZones[], flags: any[]) {
+  constructor(productionConnection: iConnection, clientSettings: iConnection, sideBarMenu: iSideBarMenu[], sideBarMenuRxjs: iSidebarMenuRxjs[],deviceZones: idevicesZones[], flags: any[]) {
     this._productionConnection = productionConnection;
     this._clientSettings = clientSettings;
     this._sideBarMenu = sideBarMenu;
+    this._sideBarMenuRxjs = sideBarMenuRxjs;
     this._deviceZones = deviceZones;
     this._flags = flags;
   }
@@ -63,6 +71,14 @@ export interface iConnection{
   signalRHub: string;
 }
 export interface iSideBarMenu {
+  id: number;
+  title: string;
+  translatetitle: string;
+  expanded:boolean;
+  subMenu: iSubMenu[];
+  icon?: string;
+}
+export interface iSidebarMenuRxjs {
   id: number;
   title: string;
   translatetitle: string;

@@ -1,6 +1,7 @@
 import {Routes} from "@angular/router";
 
 import {MainRxjsComponent} from "./main-rxjs.component";
+import {AnimationFramesComponent} from "./function/animation-frames/animation-frames.component";
 
 
 export const  RXJS_ROUTES: Routes = [
@@ -9,7 +10,8 @@ export const  RXJS_ROUTES: Routes = [
     path: '',
     component: MainRxjsComponent,
     children: [
-      // { path: '', component: ListComponent },
+      { path: '', component: AnimationFramesComponent },
+      { path: 'animationFrames', component: AnimationFramesComponent },
       // { path: 'parking', component: ParkingCarComponent },
       // { path: 'form-store', component: FormStoreComponent },
     ],
