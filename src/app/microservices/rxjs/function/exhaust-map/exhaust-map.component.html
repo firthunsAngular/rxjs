@@ -1,1 +1,12 @@
-<p>exhaust-map works!</p>
+<p>exhaustMap works!</p>
+
+<app-card [title]="'exhaustMap'">
+  <h5>exhaustMap</h5>
+  <button (click)="onClick()">Realizar solicitud</button>
+  <div *ngIf="response">{{ response }}</div>
+</app-card>
+
+
+<app-modal  [title]="'exhaustMap'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

@@ -1,1 +1,15 @@
-<p>every works!</p>
+
+<app-card [title]="'every'">
+  <h5>every</h5>
+  <div *ngIf="allNumbersGreaterThanZero; else notAllNumbers">
+    Todos los números son mayores que dos.
+  </div>
+  <ng-template #notAllNumbers>
+    Al menos un número no es mayor que dos.
+  </ng-template>
+</app-card>
+
+
+<app-modal  [title]="'every'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

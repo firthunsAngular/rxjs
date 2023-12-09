@@ -1,0 +1,14 @@
+
+<app-card [title]="'filter'">
+  <h5>filter</h5>
+  <button (click)="filterItems()">Filtrar elementos con ID mayor a 2</button>
+  <ul>
+    <li *ngFor="let item of filteredItems">{{ item.id }} - {{ item.name }}</li>
+  </ul>
+
+</app-card>
+
+
+<app-modal  [title]="'filter'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

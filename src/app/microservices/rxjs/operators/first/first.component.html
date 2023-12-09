@@ -1,0 +1,16 @@
+
+<app-card [title]="'first'">
+  <h5>first</h5>
+
+  <button (click)="mostrarPrimerNumero()">Mostrar primer número par</button>
+  <div *ngIf="primerNumero !== undefined">
+    El primer número par es: {{ primerNumero }}
+  </div>
+
+</app-card>
+
+
+<app-modal  [title]="'first'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
+

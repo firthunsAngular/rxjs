@@ -1,1 +1,13 @@
-<p>exhaust-all works!</p>
+<app-card [title]="'exhaustAll'">
+  <h5>exhaustAll</h5>
+  <div>
+    <h2>Data Display</h2>
+    <button (click)="requestData()">Request Data</button>
+    <div *ngIf="data">{{ data }}</div>
+  </div>
+</app-card>
+
+
+<app-modal  [title]="'exhaustAll'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

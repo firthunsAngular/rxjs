@@ -1,1 +1,17 @@
-<p>delay-when works!</p>
+
+<app-card [title]="'delayWhen'">
+  <h5>Retraso de datos con delayWhen en RxJS</h5>
+
+  <div *ngIf="dataLoaded">
+    Los datos han sido cargados: {{ data }}
+  </div>
+  <div *ngIf="!dataLoaded">
+    Cargando datos...
+  </div>
+
+</app-card>
+
+
+<app-modal  [title]="'delayWhen'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

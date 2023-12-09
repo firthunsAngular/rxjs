@@ -1,0 +1,12 @@
+
+<app-card [title]="'fromEvent'">
+  <h5>fromEvent</h5>
+  <button #btn>Click me!</button>
+  <p *ngIf="showMessage">Button clicked!</p>
+</app-card>
+
+
+<app-modal  [title]="'fromEvent'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
+

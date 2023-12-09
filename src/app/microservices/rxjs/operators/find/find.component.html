@@ -1,0 +1,17 @@
+
+<app-card [title]="'find'">
+  <h5>find</h5>
+
+
+  <div>
+    <button (click)="findNumber()">Buscar número 3</button>
+    <p *ngIf="foundNumber !== undefined">Número encontrado: {{ foundNumber }}</p>
+  </div>
+
+
+</app-card>
+
+
+<app-modal  [title]="'find'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

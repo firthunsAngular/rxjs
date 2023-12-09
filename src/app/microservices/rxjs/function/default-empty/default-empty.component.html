@@ -1,1 +1,33 @@
-<p>default-empty works!</p>
+
+<app-card [title]="'defaultEmpty'">
+
+  <h5>Ejemplo 1: </h5>
+
+<!--  <div *ngIf="dataAvailable; else noDataTemplate">-->
+<!--    &lt;!&ndash; Mostrar los datos en el template &ndash;&gt;-->
+<!--    <ul>-->
+<!--      <li *ngFor="let item of data">{{ item }}</li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--  <ng-template #noDataTemplate>-->
+<!--    &lt;!&ndash; Mostrar un mensaje si no hay datos &ndash;&gt;-->
+<!--    <p>No hay datos disponibles</p>-->
+<!--  </ng-template>-->
+
+  @if(dataAvailable){
+    <ul>
+    @for (trackitem of data; track trackitem){
+      <li>{{trackitem}}</li>
+    }
+    </ul>
+  } @else {
+    <p>No hay datos disponibles</p>
+  }
+
+</app-card>
+
+<!-- Modal -->
+
+<app-modal  [title]="'defaultEmpty'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

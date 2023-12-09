@@ -1,0 +1,24 @@
+
+<app-card [title]="'forkJoin'">
+  <h5>forkJoin</h5>
+
+  <button (click)="combineRequests()">Combine Requests</button>
+  <div *ngIf="combinedData">
+    <h3>Usuarios:</h3>
+    <ul>
+      <li *ngFor="let user of combinedData.users">{{ user.name }}</li>
+    </ul>
+    <h3>Publicaciones:</h3>
+    <ul>
+      <li *ngFor="let post of combinedData.posts">{{ post.title }}</li>
+    </ul>
+  </div>
+
+
+</app-card>
+
+
+<app-modal  [title]="'forkJoin'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
+

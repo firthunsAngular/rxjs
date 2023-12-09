@@ -1,1 +1,19 @@
-<p>delay works!</p>
+
+<app-card [title]="'delay'">
+  <h5>delay</h5>
+  <div *ngIf="data$ | async as data">
+    <h5>Datos obtenidos:</h5>
+    <p>{{ data }}</p>
+  </div>
+
+
+<!--  @if(data$ | async  ) {-->
+<!--    <h5>Datos Obtenidos:</h5>-->
+<!--    <p>{{data}}</p>-->
+<!--  }-->
+</app-card>
+
+
+<app-modal  [title]="'delay'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

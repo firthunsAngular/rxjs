@@ -1,0 +1,19 @@
+
+<app-card [title]="'findIndex'">
+  <h5>findIndex</h5>
+
+  <button (click)="findItem()">Find Item: 2</button>
+  <div *ngIf="foundItem">
+    <p>Item found: {{ foundItem.name }}</p>
+    <p>Index: {{ foundIndex }}</p>
+
+  </div>
+
+
+</app-card>
+
+
+<app-modal  [title]="'findIndex'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
+

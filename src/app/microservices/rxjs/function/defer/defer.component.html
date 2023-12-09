@@ -1,1 +1,21 @@
-<p>defer works!</p>
+<app-card [title]="'defer'">
+  <h5>Defer</h5>
+
+
+  @if (loading) {
+    <span>Loading....</span>
+  }
+  @if (data) {
+    <ul>
+      @for (trackItem of data;track trackItem) {
+        <li>{{ trackItem }}</li>
+      }
+    </ul>
+  }
+
+</app-card>
+
+
+<app-modal [title]="'defer'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

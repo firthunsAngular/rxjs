@@ -1,0 +1,16 @@
+
+<app-card [title]="'firstValueFrom'">
+  <h5>firstValueFrom</h5>
+  <div>
+    <h5>Valor mostrado: {{ valorMostrado !== undefined ? valorMostrado : 'N/A' }}</h5>
+    <button (click)="obtenerPrimerValor()">Obtener Primer Valor</button>
+  </div>
+
+
+
+</app-card>
+
+
+<app-modal  [title]="'firstValueFrom'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>
