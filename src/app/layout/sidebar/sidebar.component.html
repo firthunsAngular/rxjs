@@ -31,17 +31,27 @@
           <div [id]="dinamicid(eachSidebarMenuRxjs.id)" class="accordion-collapse collapse show"
                data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <ul>
-                @for (eachItem of eachSidebarMenuRxjs.subMenu;track eachItem) {
-                  <li>
-                    <a routerLink="{{eachItem.routerLink}}" class="nav-link">
-                      <p>
-                        <i class="nav-icon" [ngClass]="eachItem.icon"></i>{{ eachItem.subTitle }}
-                      </p>
-                    </a>
-                  </li>
-                }
-              </ul>
+<!--              <ul>-->
+<!--                @for (eachItem of eachSidebarMenuRxjs.subMenu;track eachItem) {-->
+<!--                  <li>-->
+<!--                    <a routerLink="{{eachItem.routerLink}}" class="nav-link">-->
+<!--                      <p>-->
+<!--                        <i class="nav-icon" [ngClass]="eachItem.icon"></i>{{ eachItem.subTitle }}-->
+<!--                      </p>-->
+<!--                    </a>-->
+<!--                  </li>-->
+<!--                }-->
+<!--              </ul>-->
+              @for (eachItem of eachSidebarMenuRxjs.subMenu;track eachItem) {
+
+                  <a routerLink="{{eachItem.routerLink}}" class="me-1 ">
+                    <span class="badge bg-secondary fs-6 mt-2">{{ eachItem.subTitle }}</span>
+
+                  </a>
+              }
+
+
+
             </div>
           </div>
         </div>

@@ -11,8 +11,7 @@ import {CombineLatestWithComponent} from "./function/combine-latest-with/combine
 import {CombineLatestAllComponent} from "./function/combine-latest-all/combine-latest-all.component";
 import {ConcatWithComponent} from "./function/concat-with/concat-with.component";
 import {CountComponent} from "./function/count/count.component";
-import {DebounceComponent} from "./function/debounce/debounce.component";
-import {DebounceTimeComponent} from "./function/debounce-time/debounce-time.component";
+
 import {DefaultEmptyComponent} from "./function/default-empty/default-empty.component";
 import {DeferComponent} from "./function/defer/defer.component";
 import {DelayComponent} from "./function/delay/delay.component";
@@ -27,7 +26,7 @@ import {ElementAtComponent} from "./function/element-at/element-at.component";
 import {EndWithComponent} from "./function/end-with/end-with.component";
 import {EveryComponent} from "./function/every/every.component";
 import {ExhaustAllComponent} from "./function/exhaust-all/exhaust-all.component";
-import {exhaustAll} from "rxjs";
+
 import {ExhaustMapComponent} from "./function/exhaust-map/exhaust-map.component";
 import {ExpandComponent} from "./function/expand/expand.component";
 import {FilterComponent} from "./function/filter/filter.component";
@@ -39,6 +38,7 @@ export const  RXJS_ROUTES: Routes = [
     path: '',
     component: MainRxjsComponent,
     children: [
+      // functions
       { path: '', component: AnimationFramesComponent },
       { path: 'animationFrames', component: AnimationFramesComponent },
       { path: 'audit', component: AuditComponent },
@@ -50,8 +50,7 @@ export const  RXJS_ROUTES: Routes = [
       { path: 'concatMap', component: ConcatMapComponent },
       { path: 'concatWith', component: ConcatWithComponent },
       { path: 'count', component: CountComponent },
-      { path: 'debounce', component: DebounceComponent },
-      { path: 'debounceTime', component: DebounceTimeComponent },
+
       { path: 'defaultEmpty', component: DefaultEmptyComponent },
       { path: 'defer', component: DeferComponent },
       { path: 'delay', component: DelayComponent },

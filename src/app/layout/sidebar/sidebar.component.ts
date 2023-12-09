@@ -1,4 +1,4 @@
-import {Component, Renderer2} from '@angular/core';
+import {Component, Renderer2, signal} from '@angular/core';
 import {BaseLayoutComponent} from "../../core/base/base.layout.component";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {CommonModule, NgClass, NgFor, NgForOf} from "@angular/common";
@@ -20,6 +20,7 @@ import {RouterModule} from "@angular/router";
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent extends BaseLayoutComponent{
+
   constructor( private renderer2: Renderer2,  translate: TranslateService,  ) {
     super(renderer2, translate);
     console.log('SidebarComponent', this.sidebarMenuRxjs);
@@ -32,4 +33,5 @@ export class SidebarComponent extends BaseLayoutComponent{
   dinamicid(id: number):string {
     return `collapse${id}`
   }
+
 }
