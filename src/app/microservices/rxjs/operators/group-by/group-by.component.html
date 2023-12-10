@@ -2,6 +2,15 @@
 <app-card [title]="'groupBy'">
   <h5>groupBy</h5>
 
+  <button (click)="groupByAge()">Agrupar por edad</button>
+  <div *ngFor="let group of groupedPeople">
+    <h3>Edad: {{ group.key }}</h3>
+    <ul>
+      <li *ngFor="let person of group.items">{{ person.name }}</li>
+    </ul>
+  </div>
+
+
 </app-card>
 
 

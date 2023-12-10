@@ -2,6 +2,17 @@
 <app-card [title]="'timeout'">
   <h5>timeout</h5>
 
+  <div *ngIf="loading">Cargando datos...</div>
+  <div *ngIf="error" style="color: red;">{{ error }}</div>
+  <div *ngIf="data">
+    <div *ngFor="let user of data">
+      <p>Nombre: {{ user.name }}</p>
+      <p>Email: {{ user.email }}</p>
+      <hr>
+    </div>
+  </div>
+  <button (click)="fetchData()">Cargar Datos</button>
+
 </app-card>
 
 

@@ -1,7 +1,8 @@
 
 <app-card [title]="'race'">
   <h5>race</h5>
-
+  <button (click)="startRace()">Iniciar Carrera</button>
+  <div *ngIf="result">El resultado es: {{ result }}</div>
 </app-card>
 
 

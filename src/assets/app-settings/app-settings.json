@@ -519,8 +519,22 @@
         }
 
       ]
+    },
+    {
+      "id": 1,
+      "title": "Clases",
+      "translatetitle": "sidebar.menu.functions",
+      "expanded": true,
+      "subMenu": [
+        {
+          "id": 0,
+          "icon": " fas fa-edit",
+          "subTitle": "BehaviorSubject",
+          "routerLink": "rxjs/BehaviorSubject"
+        }
+      ]
     }
-  ],
+    ],
   "flags": [
     {
       "name": "España",
@@ -553,4 +567,7 @@
       "code": "fr_FR"
     }
   ]
+
+
 }
+

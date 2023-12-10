@@ -1,7 +1,8 @@
 
 <app-card [title]="'skip'">
   <h5>skip</h5>
-
+  <button (click)="startSkipping()">Empezar</button>
+  <div *ngFor="let skippedValue of skippedValues">{{ skippedValue }}</div>
 </app-card>
 
 

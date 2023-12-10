@@ -2,6 +2,14 @@
 <app-card [title]="'take'">
   <h5>take</h5>
 
+  <div>
+    <button (click)="takeValues(5)">Tomar 5 valores</button>
+    <ul>
+      <li *ngFor="let value of takenValues">{{ value }}</li>
+    </ul>
+  </div>
+
+
 </app-card>
 
 

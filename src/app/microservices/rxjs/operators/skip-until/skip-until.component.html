@@ -2,6 +2,16 @@
 <app-card [title]="'skipUntil'">
   <h5>skipUntil</h5>
 
+
+  <div>
+    <button (click)="triggerNumbers()">Comenzar</button>
+    <button (click)="startGeneratingNumbers()" [disabled]="showNumbers">Generar Números</button>
+    <ul>
+      <li *ngFor="let number of numbersToShow">{{ number }}</li>
+    </ul>
+  </div>
+
+
 </app-card>
 
 

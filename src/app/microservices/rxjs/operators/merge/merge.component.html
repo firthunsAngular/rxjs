@@ -2,6 +2,11 @@
 <app-card [title]="'merge'">
   <h5>merge</h5>
 
+  <button (click)="startMerge()" [disabled]="isMerging">Combinar</button>
+  <div *ngIf="result.length > 0">
+    El resultado combinado es: {{ result | json }}
+  </div>
+
 </app-card>
 
 

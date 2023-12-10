@@ -2,6 +2,12 @@
 <app-card [title]="'lastValueFrom'">
   <h5>lastValueFrom</h5>
 
+  <div>
+    <button (click)="obtenerUltimoValor()">Obtener último valor</button>
+    <p *ngIf="lastValue !== undefined">Último valor emitido: {{ lastValue }}</p>
+  </div>
+
+
 </app-card>
 
 

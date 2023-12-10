@@ -1,7 +1,16 @@
 
 <app-card [title]="'mergeAll'">
   <h5>mergeAll</h5>
+  <button (click)="getData()">Obtener Datos</button>
 
+  @if (resultados){
+    <ul>
+      @for (trackItem of resultados; track trackItem){
+        <li>{{trackItem}}</li>
+      }
+
+    </ul>
+  }
 </app-card>
 
 

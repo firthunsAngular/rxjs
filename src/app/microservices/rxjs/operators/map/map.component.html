@@ -2,6 +2,9 @@
 <app-card [title]="'map'">
   <h5>map</h5>
 
+  <button (click)="increment()">Incrementar</button>
+  <p>Contador: {{ contador$ | async }}</p>
+
 </app-card>
 
 

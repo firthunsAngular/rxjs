@@ -2,6 +2,13 @@
 <app-card [title]="'mergeMap'">
   <h5>mergeMap</h5>
 
+  <button (click)="getData()">Obtener Datos</button>
+  <div *ngIf="mergedData">
+    <h3>Resultado 1:</h3>
+    <p>{{ mergedData.result1 | json }}</p>
+    <h3>Resultado 2:</h3>
+    <p>{{ mergedData.result2 | json }}</p>
+  </div>
 </app-card>
 
 

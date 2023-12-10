@@ -2,6 +2,16 @@
 <app-card [title]="'retry'">
   <h5>retry</h5>
 
+  <div>
+    <button (click)="fetchData()">Obtener datos</button>
+    <div *ngIf="data">
+      <h3>Datos de Usuario:</h3>
+      <ul>
+        <li *ngFor="let user of data">{{ user.name }}</li>
+      </ul>
+    </div>
+    <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+  </div>
 </app-card>
 
 

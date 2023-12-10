@@ -1,11 +1,19 @@
 
-<app-card [title]="'endWith'">
-  <h5>endWith</h5>
+<app-card [title]="'skipWhile'">
+  <h5>skipWhile</h5>
+  <div>
+    <button (click)="mostrarNumeros()">Mostrar Números</button>
+    <button (click)="detenerMostrarNumeros()">Detener</button>
+    <ul>
+      <li *ngFor="let num of numbersToShow">{{ num }}</li>
+    </ul>
+  </div>
+
 
 </app-card>
 
 
-<app-modal  [title]="'endWith'">
+<app-modal  [title]="'skipWhile'">
   <div [innerHTML]="dataservice.innerHTML"></div>
 </app-modal>
-<p>skip-while works!</p>
+

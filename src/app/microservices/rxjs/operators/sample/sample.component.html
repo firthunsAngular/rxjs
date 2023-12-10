@@ -1,7 +1,8 @@
 
 <app-card [title]="'sample'">
   <h5>sample</h5>
-
+  <button (click)="start()">Start</button>
+  <p *ngIf="showValue">Last sampled value: {{ showValue }}</p>
 </app-card>
 
 

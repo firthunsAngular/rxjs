@@ -3,6 +3,7 @@ import {CardComponent} from "../../components/card/card.component";
 import {ModalComponent} from "../../components/modal/modal.component";
 import {DataServiceService} from "../../function/services/data-service.service";
 import {CommonModule} from "@angular/common";
+import {interval, sample} from "rxjs";
 
 @Component({
   selector: 'app-sample',
@@ -25,4 +26,15 @@ export class SampleComponent  implements OnInit, OnDestroy {
   ngOnInit(): void {  }
 
   ngOnDestroy(): void { }
+
+  showValue: number=0;
+
+  start() {
+    const source$ = interval(1000); // Emits a value every second
+    const trigger$ = interval(3000); // Emits a value every three seconds
+
+    source$.pipe(sample(trigger$)).subscribe((value) => {
+      this.showValue = value;
+    });
+  }
 }

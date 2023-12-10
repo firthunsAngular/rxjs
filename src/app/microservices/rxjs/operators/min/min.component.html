@@ -2,6 +2,18 @@
 <app-card [title]="'min'">
   <h5>min</h5>
 
+  <button (click)="findMin()">Encuentra el mínimo</button>
+  <p *ngIf="minValue !== null">El número mínimo es: {{ minValue }}</p>
+
+
+  <h5>max</h5>
+  <button (click)="findMax()">Encontrar máximo</button>
+  <div *ngIf="numbers.length > 0">
+    Números generados: {{ numbers | json }}
+  </div>
+  <div *ngIf="maxValue !== undefined">
+    El valor máximo es: {{ maxValue }}
+  </div>
 </app-card>
 
 

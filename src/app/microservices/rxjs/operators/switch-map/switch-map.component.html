@@ -2,6 +2,11 @@
 <app-card [title]="'switchMap'">
   <h5>switchMap</h5>
 
+  <div>
+    <button (click)="requestData()">Solicitar Datos</button>
+    <p *ngIf="data">{{ data }}</p>
+  </div>
+
 </app-card>
 
 

@@ -1,7 +1,10 @@
 
 <app-card [title]="'skipLast'">
   <h5>skipLast</h5>
-
+  <button (click)="skipLastElements()">Skip Last Element</button>
+  <ul>
+    <li *ngFor="let item of displayedItems$ | async">{{ item }}</li>
+  </ul>
 </app-card>
 
 

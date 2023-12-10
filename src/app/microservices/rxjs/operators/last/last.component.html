@@ -2,6 +2,17 @@
 <app-card [title]="'last'">
   <h5>last</h5>
 
+
+    <button (click)="getLastData()">Mostrar Último Elemento</button>
+    <div *ngIf="lastPost">
+      <h3>Último Post</h3>
+      <p><strong>ID:</strong> {{ lastPost.id }}</p>
+      <p><strong>Título:</strong> {{ lastPost.title }}</p>
+      <p><strong>Cuerpo:</strong> {{ lastPost.body }}</p>
+    </div>
+
+
+
 </app-card>
 
 

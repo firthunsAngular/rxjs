@@ -1,7 +1,10 @@
 
 <app-card [title]="'pipe'">
   <h5>pipe</h5>
-
+  <button (click)="applyMap()">Aplicar Map</button>
+  <div *ngIf="result !== undefined">
+    El resultado es: {{ result }}
+  </div>
 </app-card>
 
 

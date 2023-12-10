@@ -2,6 +2,11 @@
 <app-card [title]="'switchAll'">
   <h5>switchAll</h5>
 
+  <div *ngIf="result$ | async as result">
+    <h3>Resultado:</h3>
+    <pre>{{ result | json }}</pre>
+  </div>
+  <button (click)="getData()">Obtener datos</button>
 </app-card>
 
 
