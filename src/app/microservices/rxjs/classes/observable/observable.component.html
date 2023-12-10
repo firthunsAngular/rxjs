@@ -1,0 +1,17 @@
+<p>observable works!</p>
+
+<app-card [title]="'observable'">
+
+  <h5>observable: </h5>
+
+  <button (click)="cambiarTexto()">Cambiar Texto</button>
+  <p>{{ texto }}</p>
+
+
+</app-card>
+
+<!-- Modal -->
+
+<app-modal  [title]="'observable'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

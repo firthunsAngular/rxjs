@@ -1,0 +1,16 @@
+<p>subscription works!</p>
+
+<app-card [title]="'subscription'">
+
+  <h5>subscription: </h5>
+
+  <button #myButton>Presiona aquí</button>
+  <div>{{ mensaje }}</div>
+
+</app-card>
+
+<!-- Modal -->
+
+<app-modal  [title]="'subscription'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

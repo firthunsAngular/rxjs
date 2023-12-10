@@ -1,0 +1,18 @@
+
+<app-card [title]="'behaviorSubject'">
+
+  <h5>behaviorSubject: </h5>
+
+  <button (click)="increment()">Incrementar</button>
+  <p>Contador: {{ contador$ | async }}</p>
+
+  <hr>
+  <button (click)="cambiarMensaje()">Cambiar Mensaje</button>
+  <p>Mensaje: {{ mensaje$ | async }}</p>
+</app-card>
+
+<!-- Modal -->
+
+<app-modal  [title]="'behaviorSubject'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

@@ -19,7 +19,7 @@ export class BaseLayoutComponent implements OnInit {
     const appSettings = AppSettingsService.appSettings['sideBarMenuRxjs'];
     if (Array.isArray(appSettings)) {
       this.sidebarMenuRxjs.push(...appSettings);
-      console.log('this.sidebarMenu', this.sidebarMenuRxjs)
+      // console.log('this.sidebarMenu', this.sidebarMenuRxjs)
     }
   }
   load() {

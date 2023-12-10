@@ -1,0 +1,15 @@
+<p>replay-subject works!</p>
+
+<app-card [title]="'replaySubject'">
+
+  <h5>replaySubject: </h5>
+  <button (click)="emitData()">Mostrar Datos</button>
+  <div *ngFor="let data of displayedData">{{ data }}</div>
+
+</app-card>
+
+<!-- Modal -->
+
+<app-modal  [title]="'replaySubject'">
+  <div [innerHTML]="dataservice.innerHTML"></div>
+</app-modal>

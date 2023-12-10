@@ -56,6 +56,11 @@ import {SwitchAllComponent} from "./operators/switch-all/switch-all.component";
 import {SwitchMapComponent} from "./operators/switch-map/switch-map.component";
 import {TakeComponent} from "./operators/take/take.component";
 import {TimeoutComponent} from "./operators/timeout/timeout.component";
+import {BehaviorSubjectComponent} from "./classes/behavior-subject/behavior-subject.component";
+import {ObservableComponent} from "./classes/observable/observable.component";
+import {ReplaySubjectComponent} from "./classes/replay-subject/replay-subject.component";
+import {SubjectComponent} from "./classes/subject/subject.component";
+import {SubscriptionComponent} from "./classes/subscription/subscription.component";
 
 
 
@@ -121,8 +126,12 @@ export const  RXJS_ROUTES: Routes = [
       { path: 'timeout', component: TimeoutComponent },
 
 
-
-
+      // classes
+      { path: 'BehaviorSubject', component: BehaviorSubjectComponent },
+      { path: 'observable', component: ObservableComponent },
+      { path: 'replaySubject', component: ReplaySubjectComponent },
+      { path: 'subject', component: SubjectComponent },
+      { path: 'subscription', component: SubscriptionComponent },
 
 
 

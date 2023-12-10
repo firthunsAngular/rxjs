@@ -531,6 +531,30 @@
           "icon": " fas fa-edit",
           "subTitle": "BehaviorSubject",
           "routerLink": "rxjs/BehaviorSubject"
+        },
+        {
+          "id": 1,
+          "icon": " fas fa-edit",
+          "subTitle": "observable",
+          "routerLink": "rxjs/observable"
+        },
+        {
+          "id": 2,
+          "icon": " fas fa-edit",
+          "subTitle": "replaySubject",
+          "routerLink": "rxjs/replaySubject"
+        },
+        {
+          "id": 3,
+          "icon": " fas fa-edit",
+          "subTitle": "subject",
+          "routerLink": "rxjs/subject"
+        },
+        {
+          "id": 4,
+          "icon": " fas fa-edit",
+          "subTitle": "subscription",
+          "routerLink": "rxjs/subscription"
         }
       ]
     }

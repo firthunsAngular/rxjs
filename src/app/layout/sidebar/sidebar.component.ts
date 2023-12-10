@@ -23,7 +23,7 @@ export class SidebarComponent extends BaseLayoutComponent{
 
   constructor( private renderer2: Renderer2,  translate: TranslateService,  ) {
     super(renderer2, translate);
-    console.log('SidebarComponent', this.sidebarMenuRxjs);
+    // console.log('SidebarComponent', this.sidebarMenuRxjs);
   }
 
   dinamicHashId(item: number):string {
